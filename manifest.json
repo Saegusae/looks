@@ -1,0 +1,11 @@
+{
+  "files" : {
+    "index.js" : "392f04d2a99957f5268a1c9d2777d7700709691c06ba244b44537d3b160a3228",
+    "names.js" : "c2a5914fd50df81228ec0c6c84e67142fa2448e76bf05991d5d37cf23efa8360"
+  },
+  "defs" : {
+    "S_LOGIN" : 9,
+    "S_SPAWN_USER" : 10,
+    "S_DESPAWN_USER" : 3
+  }
+}
