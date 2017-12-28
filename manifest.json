@@ -1,7 +1,8 @@
 {
   "files" : {
     "index.js" : "392f04d2a99957f5268a1c9d2777d7700709691c06ba244b44537d3b160a3228",
-    "names.js" : "c2a5914fd50df81228ec0c6c84e67142fa2448e76bf05991d5d37cf23efa8360"
+    "names.js" : "c2a5914fd50df81228ec0c6c84e67142fa2448e76bf05991d5d37cf23efa8360",
+    "module.json" : "1e78f1d497a25245181698729cda814dda15325cf39c3081b0358334655e98db"
   },
   "defs" : {
     "S_LOGIN" : 9,
