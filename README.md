@@ -22,10 +22,12 @@ Command | Usage | Description
 !looks copy | !looks copy \<name or "self"\> | Copies character data for next character generated.
 
 ## Notes:
-* !looks self can always be used.
-* !looks \<name\> requires the character to be nearby (enough to be rendered.)
+* !looks save/copy self can always be used.
+* !looks save/copy \<name\> requires the character to be nearby (enough to be rendered.)
+* !looks copy requires C_CREATE_USER to be mapped (which currently is not.) So the functionality won't work until you map it manually or devs decide to add it to mapped list.
 
 ## Credits:
 * **Saegusa:** for this awesome idea, beast and beautiful code, overall badass.
 * **Caali:** for reference data.
+* **SaltyMonkey:** For reference code on character creation data.
 * **Dong:** Was awake to answer a question while I was coding dis.
