@@ -176,7 +176,7 @@ module.exports = function Looks(dispatch) {
 
   function getRaceIndex(template) {
     if(Math.floor((template - 100) / 200 % 50) === 4 && 
-      (Math.floor(model / 100 % 2) + 1) === 1) return 6;
+      (Math.floor(template / 100 % 2) + 1) === 1) return 6;
     else
       return Math.floor((template - 100) / 200 % 50);
   }
