@@ -98,6 +98,9 @@ module.exports = function Looks(dispatch) {
   }
 
   function saveDataToJson(data) {
+    if (!fs.existsSync('../node_modules/looks/data'))
+      fs.mkdirSync('../node_modules/looks/data');
+
     fs.writeFile(`../node_modules/looks/data/${data.name}_${Date.now()}.json`, JSON.stringify(data, null, 2), (err) => {
       if(err) console.log(err);
       else console.log('Character data successfully saved for ' + data.name);
