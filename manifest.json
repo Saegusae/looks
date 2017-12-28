@@ -1,12 +1,13 @@
 {
   "files" : {
-    "index.js" : "392f04d2a99957f5268a1c9d2777d7700709691c06ba244b44537d3b160a3228",
+    "index.js" : "753481b107a95c5fcf961600d0e72ad2b452f66d6e93da4df403c4bcaa71546a",
     "names.js" : "c2a5914fd50df81228ec0c6c84e67142fa2448e76bf05991d5d37cf23efa8360",
     "module.json" : "1e78f1d497a25245181698729cda814dda15325cf39c3081b0358334655e98db"
   },
   "defs" : {
     "S_LOGIN" : 9,
     "S_SPAWN_USER" : 11,
-    "S_DESPAWN_USER" : 3
+    "S_DESPAWN_USER" : 3,
+    "C_CREATE_USER" : 1
   }
 }

@@ -94,7 +94,7 @@ module.exports = function Looks(dispatch) {
         } else {
           copy = self;
           copyflag = true;
-          command.message(`(looks) Copied data for character ${data[0].name}. Go back to lobby to create a new character.`)
+          command.message(`(looks) Copied data for character ${self.name}. Go back to lobby to create a new character.`)
         }
         break;
     }
