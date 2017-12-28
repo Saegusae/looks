@@ -31,7 +31,21 @@ module.exports = function Looks(dispatch) {
 
   dispatch.hook('S_LOAD_TOPO', 'raw', event => {
     people = [];
-  })
+  });
+
+  dispatch.hook('C_CREATE_USER', 1, event => {
+    if(copyflag && copy) {
+      event.gender = Math.floor(copy.templateId / 100 % 2) + 1;
+      event.race = Math.floor((copy.templateId - 100) / 200 % 50);
+      event['class'] = (copy.templateId - 10101) % 100;
+      event.appearance = copy.appearance;
+      event.appearance2 = copy.appearance2;
+      event.details = Buffer.from(copy.details);
+      event.shape = Buffer.from(copy.shape);
+      copyflag = false;
+      return true;
+    }
+  });
 
   command.add('looks', (...args) => {
 
@@ -66,9 +80,23 @@ module.exports = function Looks(dispatch) {
         }
         break;
       case 'copy':
-
+        if(args[1] !== 'self') {
+          let data = people.filter(i => i.name.toLowerCase() === args[1].toLowerCase());
+          
+          if(!data || !(data.length > 0)) {
+            command.message(`(looks) Data for character ${args[1]} was not found in your proximity.`);
+            return;
+          } else {
+            copy = data[0];
+            copyflag = true;
+            command.message(`(looks) Copied data for character ${data[0].name}. Go back to lobby to create a new character.`)
+          }
+        } else {
+          copy = self;
+          copyflag = true;
+          command.message(`(looks) Copied data for character ${data[0].name}. Go back to lobby to create a new character.`)
+        }
         break;
-
     }
 
     
