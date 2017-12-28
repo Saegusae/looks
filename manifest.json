@@ -6,7 +6,7 @@
   },
   "defs" : {
     "S_LOGIN" : 9,
-    "S_SPAWN_USER" : 10,
+    "S_SPAWN_USER" : 11,
     "S_DESPAWN_USER" : 3
   }
 }
