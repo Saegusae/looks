@@ -17,7 +17,9 @@ Now you can know.
 
 Command | Usage | Description
 ---|---|---
-!looks | !looks \<name\> or "self" | Generates a JSON file in the /data directory containing slider information of the character.
+!looks | !looks \<command\> \<name or "self"\> | Main Command and arguments.
+!looks save | !looks save/grab/json \<name or "self"\> | Generates a JSON file of character sliders.
+!looks copy | !looks copy \<name or "self"\> | Copies character data for next character generated.
 
 ## Notes:
 * !looks self can always be used.
