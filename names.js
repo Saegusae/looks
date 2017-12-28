@@ -48,7 +48,7 @@ module.exports = {
     'spine._1',
     'spine._2',
     'spine._3',
-    'spine,_4',
+    'spine._4',
     'head._2',
     'eyes._1',
     'eyes._2',
