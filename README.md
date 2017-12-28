@@ -30,4 +30,5 @@ Command | Usage | Description
 * **Saegusa:** for this awesome idea, beast and beautiful code, overall badass.
 * **Caali:** for reference data.
 * **SaltyMonkey:** For reference code on character creation data.
+* **Leiki:** for testing muh stuff.
 * **Dong:** Was awake to answer a question while I was coding dis.
