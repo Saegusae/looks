@@ -78,7 +78,7 @@ module.exports = function Looks(dispatch) {
 
         if(val.length > 1) {
           if(!obj.details[val[0]]) obj.details[val[0]] = {};
-          obj.details[val[0]][val[1]] = d;
+          obj.details[val[0]][val[1]] = d+1;
         }
       }
     });
@@ -89,7 +89,7 @@ module.exports = function Looks(dispatch) {
 
         if(val.length > 1) {
           if(!obj.shape[val[0]]) obj.shape[val[0]] = {};
-          obj.shape[val[0]][val[1]] = s;
+          obj.shape[val[0]][val[1]] = s+1;
         }
       }
     })
