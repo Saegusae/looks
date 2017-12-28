@@ -7,13 +7,17 @@ or:
 
 Now you can know.
 
-## Commands
+## Commands:
 
 Command | Usage | Description
 ---|---|---
 !looks | !looks \<name\> or "self" | Generates a JSON file in the /data directory containing slider information of the character.
 
-## Credits
+## Notes:
+* !looks self can always be used.
+* !looks \<name\> requires the character to be nearby (enough to be rendered.)
+
+## Credits:
 * **Saegusa:** for this awesome idea, beast and beautiful code, overall badass.
 * **Caali:** for reference data.
 * **Dong:** Was awake to answer a question while I was coding dis.
