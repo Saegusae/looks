@@ -1,11 +1,12 @@
 const fs = require('fs');
+const path = require('path');
 const Command = require('command');
 const names = require('./names');
 
 module.exports = function Looks(dispatch) {
   
   let command = Command(dispatch);
-  
+  let dataFolder = path.join(__dirname, '/data/');
   let self, 
     people = [],
     copy,
@@ -80,7 +81,7 @@ module.exports = function Looks(dispatch) {
         }
         break;
       case 'copy':
-        if(args[1] !== 'self') {
+        if(args[1].length !==0 && args[1] !== 'self') {
           let data = people.filter(i => i.name.toLowerCase() === args[1].toLowerCase());
           
           if(!data || !(data.length > 0)) {
@@ -162,14 +163,15 @@ module.exports = function Looks(dispatch) {
   }
 
   function saveDataToJson(data) {
-    if (!fs.existsSync('../node_modules/looks/data'))
-      fs.mkdirSync('../node_modules/looks/data');
 
-    fs.writeFile(`../node_modules/looks/data/${data.name}_${Date.now()}.json`, JSON.stringify(data, null, 2), (err) => {
+    if (!fs.existsSync(dataFolder))
+      fs.mkdirSync(dataFolder);
+
+    fs.writeFile(`${dataFolder}${data.name}_${Date.now()}.json`, JSON.stringify(data, null, 2), (err) => {
       if(err) console.log(err);
       else {
         command.message(`Character data successfully saved for ${data.name}.`);
-        console.log('Character data successfully saved for ' + data.name);
+        //console.log('Character data successfully saved for ' + data.name);
       }
     });
   }
