@@ -1,13 +1,13 @@
 {
-  "files" : {
-    "index.js" : "753481b107a95c5fcf961600d0e72ad2b452f66d6e93da4df403c4bcaa71546a",
-    "names.js" : "c2a5914fd50df81228ec0c6c84e67142fa2448e76bf05991d5d37cf23efa8360",
-    "module.json" : "1e78f1d497a25245181698729cda814dda15325cf39c3081b0358334655e98db"
+  "files": {
+    "index.js": "18107dd0924d513c01546cfb323eff7536077e3825c5d8e3afa031eac1fc6db0",
+    "names.js": "64046ddfb20364c8252a2d2f70a1313a008da8e9ec1ebca3a0daa9bd92483b37",
+    "module.json": "d5d414545f48d0e211c2e31b538470af280900515c3e94ae61199a37986853a0"
   },
-  "defs" : {
-    "S_LOGIN" : 9,
-    "S_SPAWN_USER" : 11,
-    "S_DESPAWN_USER" : 3,
-    "C_CREATE_USER" : 1
+  "defs": {
+    "S_LOGIN": 9,
+    "S_SPAWN_USER": 11,
+    "S_DESPAWN_USER": 3,
+    "C_CREATE_USER": 1
   }
 }
